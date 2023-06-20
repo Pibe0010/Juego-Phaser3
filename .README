@@ -1,0 +1,24 @@
+Creamos un juego con phaser 3
+
+1 - Creamos una carpeta ASSETS donde podremos la img que usaremos.
+
+2 - Creamos 2 archivo HTMl donde uno tendra nuestro juego, y el otro contendra la entrada al juego el inicio.
+
+3 - Creamos la carpeta SRC que tendra  2 archivos JS. Que uno contendra el archivo phazer.min.js, y el otro tendra nuestro javascript del juego.
+
+4 - Creamos tambien nuestro 2 archivos CSS uno para la entrada y el  otro para nuestro index.
+
+5- Creamos SweetAlert2 para hacer un alert : https://sweetalert2.github.io/#download
+
+
+API de phazer : https://newdocs.phaser.io/docs/3.60.0
+
+El juego tendra una ecenario donde tienes que recolectar estrellas al consegir 120 puntos caera una bomba que si colicionas con ella game over. Cada 120 puntos caera una bomba. 
+
+ Vida de nuestro pj : 1 vida
+   
+ Level 1 : 120 | una bomba
+ Level 2 : 240 | dos bomba
+ Level 3 : 460 | tres bomba
+ Level 4 : 580 | cuatro bomba
+ Level 5 : 700 | cinco bomba
