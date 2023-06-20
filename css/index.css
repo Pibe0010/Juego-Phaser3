@@ -7,7 +7,8 @@
 body {
     margin-left: 14rem;
     background-color: #000;
-    position: fixed;
+    position: block;
+    display: flex;
 }
 .titulo {
     color: aliceblue;
@@ -67,3 +68,30 @@ body {
     color:aliceblue;
     background-color: transparent;
 }
+
+@media screen and (max-width: 400px) {
+    body {
+        position: relative;
+        display: -webkit-flex;
+        max-block-size: 50%;
+    }
+    .titulo{
+        padding-top: 40rem;
+        margin-left: 20rem;
+    }
+    .level{
+        padding-top: 45rem;
+        margin-left: 20rem;
+        width: 100rem;
+    }
+    .btn{
+        padding: .4rem 4rem;
+        margin-left: 17rem;
+        margin-top: 53rem;       
+    }
+    .btn1{
+        padding: .4rem 2.3rem;
+        margin-left: 18.4rem;
+        margin-top: 46rem;       
+    }
+  }
