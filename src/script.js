@@ -1,4 +1,4 @@
-
+const controls = document.querySelectorAll(".controles i");
 
 var config = {
     type: Phaser.AUTO,
@@ -129,7 +129,7 @@ function update() {
     if(cursors.up.isDown && player.body.touching.down ) {
         player.setVelocityY(-330);
     }
-
+    
 }
 
 function collectStar(player, star) {

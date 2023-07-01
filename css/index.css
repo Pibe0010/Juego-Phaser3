@@ -5,16 +5,19 @@
 }
 
 body {
-    margin-left: 14rem;
     background-color: #000;
     position: block;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .titulo {
     color: aliceblue;
-    margin-left: -10rem;
     position: absolute;
-    margin-top: .5rem;
+    margin-right: 65rem;
+    margin-bottom: 30rem;
 }
 
 .scoreText {
@@ -25,9 +28,10 @@ body {
 }
 .level {
     color: aliceblue;
-    margin-left: -10rem;
     position: absolute;
-    margin-top: 17rem;
+    margin-left: 65rem;
+    margin-bottom: 15rem;
+    
 }
 .live{
     color: aliceblue;
@@ -37,9 +41,9 @@ body {
 }
 .btn{
     color: rgb(15, 15, 15);
-    margin-left: -12rem;
     position: absolute;
-    margin-top: 12rem;
+    margin-right: 65rem;
+    margin-bottom: 20rem;
     text-decoration: none;
     border: .1rem solid rgb(245, 248, 245);
     background-color: rgb(198, 195, 16);
@@ -53,9 +57,9 @@ body {
 }
 .btn1{
     color: rgb(15, 15, 15);
-    margin-left: -12rem;
+    margin-right: 65rem;
+    margin-bottom: 10rem;
     position: absolute;
-    margin-top: 6rem;
     text-decoration: none;
     border: .1rem solid rgb(245, 248, 245);
     background-color: rgb(198, 195, 16);
@@ -69,29 +73,68 @@ body {
     background-color: transparent;
 }
 
-@media screen and (max-width: 400px) {
+.controles {
+    align-items: center;
+    text-align: center;
+    display: none;
+    gap: 1rem;
+    flex-direction: row;
+    margin: .5rem;
+    
+}
+.controles button {
+    border-radius: 1rem;
+    cursor: pointer;
+    padding: .4rem;
+    background-color: rgba(23, 216, 59, 0.4);
+}
+
+@media screen and (max-width: 500px) {
     body {
-        position: relative;
-        display: -webkit-flex;
-        max-block-size: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+    .controles {
+        align-items: center;
+        text-align: center;
+        display: flex;
+        gap: 1rem;
+        flex-direction: row;
+        margin: .5rem;
+        margin-top: 430px;
+        margin-right: 10px;
+        position: absolute;
+
+    }
+    canvas {
+        width: 100%;
     }
     .titulo{
-        padding-top: 40rem;
-        margin-left: 20rem;
+       margin: 30px auto;
+       margin-top: 550px;
     }
     .level{
-        padding-top: 45rem;
-        margin-left: 20rem;
-        width: 100rem;
+        margin: 30px auto;
+       margin-top: 880px;
+       
+
+
     }
     .btn{
-        padding: .4rem 4rem;
-        margin-left: 17rem;
-        margin-top: 53rem;       
+       margin: 30px auto;
+       margin-top: 650px;
+       margin-right: 170px;
+
+      
     }
     .btn1{
-        padding: .4rem 2.3rem;
-        margin-left: 18.4rem;
-        margin-top: 46rem;       
+        margin: 30px auto;
+       margin-top: 650px;
+       margin-left: 170px;
+
+      
     }
   }

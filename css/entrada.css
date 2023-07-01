@@ -8,6 +8,7 @@ body {
     margin-left: 14rem;
     background-color: #000;
 
+
 }
 .btn {
     background-color: gold;
@@ -29,3 +30,25 @@ body {
     color: aliceblue;
     box-shadow: none;
 }
+
+
+@media screen and (max-width: 500px) {
+    body {
+       
+       align-items: center;
+       justify-content: center;
+       display: flex;
+    }
+    canvas {
+        max-width: 200%;
+        padding: 2rem;
+        margin-right: 14rem;
+    }
+
+    .btn{
+       margin: 30px auto;
+       margin-top: 290px;
+       margin-right: 200px;
+    }
+
+  }
